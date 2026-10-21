@@ -19,9 +19,7 @@ def load_data(path):
     return data.sort_values("측정시각")
 
 
-df = load_data(
-    "/content/drive/MyDrive/데이터분석(20261019)강의/analysis_result.csv"
-)
+df = load_data("analysis_result.csv")
 
 if df.empty:
     st.warning("조회할 데이터가 없습니다.")
